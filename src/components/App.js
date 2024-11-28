@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import About from "./About";
@@ -7,7 +7,8 @@ import About from "./About";
 import user from "../data/user";
 console.log(user);
 
-function App() {
+class App extends Component {
+  render (){
   return (
     <div>
       <NavBar />
@@ -16,5 +17,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
